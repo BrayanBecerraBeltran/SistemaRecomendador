@@ -1,0 +1,139 @@
+{%extends './base.html' %}
+
+{%block title%} Datos {%endblock%}
+
+{%block body %}
+
+<section class="data2 section">
+    <div class="data2__container container">
+        <div class="data__content">
+
+            <h1 class="data2__title">Calculo de datos</h1>
+
+            <form action="/form" method="post" class="data__opcs">
+                <div class="data2__opc">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text"  name="Nombre" required></br>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta1">Pregunta 1</label></h4>
+                    <p>En valores booleanos, que representa en valor 1</p>
+                    <select name="r1">
+                        <option value="0" selected></option>
+                        <option value="1">Verdadero</option>
+                        <option value="2">Falso</option>
+                        <option value="3">Ninguna</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta2">Pregunta 2</label></h4>
+                    <p>Escoge el que tipo de entradas son correctas</p>
+                    <select name="r2">
+                        <option value="0" selected></option>
+                        <option value="1">Java, C++, Smalltalk, Python, Object Pascal, Visual .net, Visual Basic, Delphi, Perl</option>
+                        <option value="2">Entero, Flotante, Booleano, Caracter, Cadena de Texto, Vector, Matriz </option>
+                        <option value="3">Actionscript, COBOL, C#, .NET, PHP, Simula, PowerBuilder, Maya</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta3">Pregunta 3</label></h4>
+                    <p>Que tipos de ciclos existen</p>
+                    <select name="r3">
+                        <option value="0" selected></option>
+                        <option value="1">for while, while, for</option>
+                        <option value="2">while, break, for while</option>
+                        <option value="3">do while, while, for</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta4">Pregunta 4</label></h4>
+                    <p>Qué elementos se puede comparar con un condicional "if"</p>
+                    <select name="r4">
+                        <option value="0" selected></option>
+                        <option value="1">Variables</option>
+                        <option value="2">Funciones</option>
+                        <option value="3">Ciclos</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta5">Pregunta 5</label></h4>
+                    <p>¿Qué es un pseudocódigo?</p>
+                    <select name="r5">
+                        <option value="0" selected></option>
+                        <option value="1">Son los pasos a tener en cuenta para resolver un problema</option>
+                        <option value="2">Es el código implementado en el lenguaje de programación</option>
+                        <option value="3">Es una prueba de escritorio para visualizar el resultado obtenido</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta6">Pregunta 6</label></h4>
+                    <p>Cuál es la diferencia entre un bit y un Byte</p>
+                    <select name="r6">
+                        <option value="0" selected></option>
+                        <option value="1">La diferencia es que uno es de datos y otro es conjunto de datos</option>
+                        <option value="2">La diferencia es de 1024 Mb de almacenamiento.</option>
+                        <option value="3">En que uno corresponde a la unidad mínima de Memoria y el otro es un conjunto de 6 a 8 bits</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta7">Pregunta 7</label></h4>
+                    <p>¿Que es un DFD (Diagrama de flujo de datos)?</p>
+                    <select name="r7">
+                        <option value="0" selected></option>
+                        <option value="1">Es el orden de los pasos para un sistema de informacion</option>
+                        <option value="2">Es la Representación simbólica de un algoritmo</option>
+                        <option value="3">Es el estudio de las ordenes creadas por un programador</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta8">Pregunta 8</label></h4>
+                    <p>La unidad de medida que más se utiliza en la actualidad es el Megabyte</p>
+                    <select name="r8">
+                        <option value="0" selected></option>
+                        <option value="1">Verdadero</option>
+                        <option value="2">Falso</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta9">Pregunta 9</label></h4>
+                    <p>¿Que es un código en programación?</p>
+                    <select name="r9">
+                        <option value="0" selected></option>
+                        <option value="1">Es más que un conjunto de instrucciones que son redactadas por un usuario en un Sfw que tiene conocimientos del Lenguaje de Programación</option>
+                        <option value="2">Es un lenguaje artificial e informal útil para el desarrollo de algoritmos</option>
+                        <option value="3">Es un método o procedimiento definido para resolver un problema</option>
+                    </select>
+                </div>
+
+                <div class="data2__opc">
+                    <h4><label for="Pregunta10">Pregunta 10</label></h4>
+                    <p>¿Que es un algoritmo?</p>
+                    <select name="r10">
+                        <option value="0" selected></option>
+                        <option value="1">Es una serie de pasos para dar solución a un problema</option>
+                        <option value="2">Es el estudio de las ordenes creadas por un programador</option>
+                        <option value="3">Es el orden de los pasos para un sistema de informacion</option>
+                    </select>
+                </div>
+
+                <div class="data2__send">
+                    <input type="submit" value="Enviar" class="button" >
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
+{%endblock%}

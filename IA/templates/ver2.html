@@ -1,0 +1,87 @@
+{%extends './base.html' %}
+
+{%block title%} Visualizacion de datos {%endblock%}
+
+{%block body %}
+
+<strong>
+
+    <section class="visualizacion section">
+        <div class="visual__container container">
+
+
+            <div class="visualizacion__icon">
+                <a href="http://127.0.0.1:5017/formulario" >
+                    <i class="uil uil-previous"></i>
+                </a>
+                <a href="http://127.0.0.1:5017/" class="">
+                    <i class="uil uil-step-forward"></i>
+                </a>
+            </div>
+
+            <div class="visual__content">
+                <div class="variables">
+                    <h1 class="visual__title"><span>{{recomen}}</span></h1>
+                    <h3>Tiempo de Estudio</h3>
+                    {{time}}
+                    <h3>Numero de Ejercicios</h3>
+                    {{exer}}
+                    <h3>Nota Test</h3>
+                    {{notaT}}
+
+                </div>
+
+                <div class="recomendacion__red">
+                    <div class="imgen">
+                        <img id="imagen" src="../static/img/{{ref}}.png" alt="imagen">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visualizacion section">
+        <div class="visual__container container">
+            
+            <div class="visualizacion__title">
+                <h1>Resultado <span>Test</span></h1>
+            </div>
+
+            <div class="visual__content">
+                <div class="variables">
+                    <h3 >Nombre:  <span>{{Nom}}</span> <br></h3>
+                    <p>Respuesta 1 :<span>{{Resultado1}}</span></p>
+                    <p>Respuesta 2 :<span>{{Resultado2}}</span></p>
+                    <p>Respuesta 3 :<span>{{Resultado3}}</span></p>
+                    <p>Respuesta 4 :<span>{{Resultado4}}</span></p>
+                    <p>Respuesta 5 :<span>{{Resultado5}}</span></p>
+                    <p>Respuesta 6 :<span>{{Resultado6}}</span></p>
+                    <p>Respuesta 7 :<span>{{Resultado7}}</span></p>
+                    <p>Respuesta 8 :<span>{{Resultado8}}</span></p>
+                    <p>Respuesta 9 :<span>{{Resultado9}}</span></p>
+                    <p>Respuesta 10 :<span>{{Resultado10}}</span></p>
+
+                </div>
+
+                <div class="recomendacion__red">
+                    <h3 class="visual__nota">Nota Final:  <span>{{Resultado_final}} / 10</span></h3>
+                    <div class="imagen">
+                        <img id="imagen" src="../static/img/{{imagen}}.png" alt="imagen" width="60%">
+                    </div>
+                    <div class="porcentaje_data">
+                        <div class="porcentaje_name">
+                            <span class="porcentaje_name">Resultado</span>
+                        </div>
+                        <div>
+                            <span  id="porcentaje" class="porcentaje">{{Resultado_final * 10}} %</span>
+                        </div>
+                        <div class="porcentaje_bar porcentaje_resultado"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</strong>
+
+{%endblock%}

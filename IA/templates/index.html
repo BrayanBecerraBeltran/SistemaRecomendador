@@ -1,0 +1,32 @@
+{%extends './base.html' %}
+
+{%block title%} Inicio {%endblock%}
+
+{%block body %}
+
+<section class="home section">
+    <div class="home__container container">
+        <div class="home__content">
+
+            <div class="home__data">
+                <h1 class="home__title">Hola, Yo soy tu <span>Sistema recomendador</span></h1>
+                <h3 class="home__subtitle">Quiero ayudarte</h3>
+                <p class="home__description">Ingresa a nuestra plataforma</p>
+            
+            </div>
+
+            <div class="home__ingreso">
+                <a href="http://127.0.0.1:5017/datos" class="home__button button">
+                    Ingreso manual
+                </a>
+
+                <a href="http://127.0.0.1:5017/formulario" class="home__button button">
+                    Ingreso form
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{%endblock%}
